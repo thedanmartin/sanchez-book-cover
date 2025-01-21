@@ -1,0 +1,154 @@
+.container {
+height: 600px;
+width: 400px;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+background-color: rgb(34, 34, 111);
+overflow: hidden;
+}
+
+.trees {
+height: 600px;
+width: 400px;
+background-image: url(../images/trees.png);
+position: absolute;
+transform:translate(-50%,-50%);
+top:300px;
+left:200px;
+z-index: 2;
+animation: trees_fade 3s;
+opacity: 0;
+animation-fill-mode: forwards;
+animation-delay: 1s;
+}
+
+@keyframes trees_fade{
+    0% {opacity:0; }
+    100%{ opacity:1;} 
+}
+
+
+.lake {
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    top:-15px;
+    background-image: url(../images/lake.png);
+    z-index: 3;
+    animation: lake_fade 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes lake_fade{
+    0%{opacity: 0;}
+    100%{opacity:1;}
+}
+
+.sky{
+    height:600px;
+    width:400px;
+    position:absolute;
+    top: -12px;
+    background-image: url(../images/sky.png);
+    z-index:4;
+    animation: sky_fade 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes sky_fade {
+    0%{opacity: 0;}
+    100%{opacity:1;}
+}
+
+.moon{
+    height: 600px;
+    width:400px;
+    position:absolute;
+    background-image: url(../images/moon.png);
+    z-index:5;
+    animation:moon_fade 6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes moon_fade {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.author{
+font-family: "futura-pt", sans-serif;
+font-weight: 300;
+font-style: normal;
+color: white;
+position: absolute;
+top: 520px;
+left: 30px;
+letter-spacing: 3px; 
+animation: author_fade 9s;
+opacity: 0;
+animation-fill-mode: forwards;
+animation-delay: 6s;
+}
+
+@keyframes author_fade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.type{
+font-family: "serenity", sans-serif;
+font-weight: 300;
+font-style: normal;
+color: white;
+position:absolute;
+top: 390px;
+left: 160px;
+font-size: 10px;
+letter-spacing: 5px;
+}
+
+.title{
+font-family: "mrs-eaves", serif;
+font-weight: 400;
+font-style: normal;
+color: white;
+font-size: 33px;
+position: absolute;
+top: 247px;
+left:13px;
+}
+
+.title:hover{
+    color:rgb(133, 114, 190);
+}
+
+.quote{
+font-family: "futura-pt", sans-serif;
+font-weight: 300;
+font-style: normal;
+color:white;
+font-size: 15px;
+position: absolute;
+top: 25px;
+/* left: -200px; */
+animation: quote_move 3s;
+animation-fill-mode: forwards;
+animation-duration: ;
+}
+
+@keyframes quote_move {
+0%{margin-left:-800px;}
+100%{left:130px;}
+}
+
+
+
+
